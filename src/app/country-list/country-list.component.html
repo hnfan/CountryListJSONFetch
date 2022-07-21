@@ -1,0 +1,9 @@
+<br>
+<button (click)="getData()">Click to Get Country List and Capitals</button>
+
+<!--The code to display countries and capitals -->
+<div *ngFor="let country of data[1]" style="text-align:left">
+<h3>
+{{ country.name }}: {{ country.capitalCity?country.capitalCity:"N/A" }}
+</h3>
+</div>
